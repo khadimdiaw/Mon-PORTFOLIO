@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081225">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Khadim Diaw — Portfolio professionnel">
+<meta property="og:description" content="Conception de sites web modernes, responsives et adaptés aux entreprises au Sénégal.">
+<meta property="og:type" content="website">
+<meta name="description" content="Portfolio professionnel de Khadim Diaw, concepteur de sites web au Sénégal.">
+<title>Khadim Diaw — Portfolio Tech</title>
+<style>
+:root{--bg:#081225;--panel:#111f37;--text:#f5f7fb;--muted:#b4c1d4;--mint:#54e0c1;--blue:#80aaff;--line:#ffffff20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 5%,#203759,transparent 32%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offset:4px}.skip-link{position:absolute;left:-9999px;top:8px;background:var(--mint);color:#061323;padding:10px 14px;border-radius:8px;z-index:20}.skip-link:focus{left:12px}.wrap{width:min(1100px,calc(100% - 36px));margin:auto}header{position:sticky;top:0;z-index:5;background:#081225eF;border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800}.mark{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:linear-gradient(135deg,var(--mint),var(--blue));color:#081225}.brand small{display:block;color:var(--muted);font-size:.72rem;letter-spacing:1px;font-weight:500}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;margin:0}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--mint)}.menu{display:none;background:var(--panel);border:1px solid var(--line);color:white;padding:8px 12px;border-radius:9px}
+.hero{padding:90px 0 72px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}.eyebrow,.kicker{color:var(--mint);text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:.78rem}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.04;letter-spacing:-2px;margin:15px 0}h1 span{color:var(--mint)}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:8px 0}h3{margin-top:0}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:11px;text-decoration:none;font-weight:750;border:1px solid var(--line);transition:transform .18s ease,background .18s ease,border-color .18s ease}.btn:hover{transform:translateY(-2px);border-color:#54e0c180}.primary:hover{background:#79f0d8}.secondary:hover{background:#ffffff12}.primary{background:var(--mint);color:#061323;border-color:transparent}.secondary{background:#ffffff08}.profile,.card{background:var(--panel);border:1px solid var(--line);border-radius:22px}.profile{padding:25px}.orb{aspect-ratio:1.1;display:grid;place-items:center;border-radius:17px;background:radial-gradient(circle at center,#315578,#111f37 68%)}.monogram{font-size:7rem;font-weight:900;letter-spacing:-8px;color:var(--mint)}.profile-photo{width:100%;height:100%;max-height:390px;object-fit:cover;object-position:center 35%;border-radius:17px;display:block}.caption{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:15px}.caption p{margin:0}.muted{color:var(--muted)}section{padding:62px 0}.intro{max-width:700px;margin-bottom:28px}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{padding:25px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{border:1px solid var(--line);border-radius:99px;padding:6px 10px;font-size:.85rem;color:#dce7f6}.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{padding:0;overflow:hidden}.project-head{padding:24px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,#54e0c129,#80aaff1c),#142540;border-bottom:1px solid var(--line)}.project-head.gold{background:linear-gradient(135deg,#f1b50040,#0b2c5d),#142540}.logo{display:inline-flex;align-self:flex-start;background:#081225aa;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:900}.project-head h3{font-size:1.7rem;margin:12px 0 0}.project-body{padding:24px}.project-body p{color:var(--muted)}.project-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{padding:20px;border-top:2px solid var(--mint);background:#111f37;border-radius:0 0 14px 14px}.step strong{display:block;margin-bottom:8px}.contact{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(110deg,#54e0c119,#80aaff13)}.contact p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* FOOTER MODERNE */
+.footer {
+    background: #071426;
+    color: #ffffff;
+    padding: 45px 20px 22px;
+    margin-top: 80px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.footer-brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.footer-logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+
+.footer-logo span {
+    color: #57e6bd;
+}
+
+.footer-brand p {
+    color: #9baabd;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.footer-socials a {
+    color: #c3cfdd;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color .3s ease;
+}
+
+.footer-socials a:hover {
+    color: #57e6bd;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.10);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    color: #8292a7;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #57e6bd;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* VERSION MOBILE */
+@media (max-width: 600px) {
+    .footer {
+        padding: 35px 18px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-socials {
+        gap: 18px;
+    }
+}
+
+  
+/* =====================================
+   SECTION À PROPOS - KHADIM DIAW
+   Design professionnel et responsive
+===================================== */
+
+#apropos {
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #07172e, #0b2342);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+#apropos .wrap {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* INTRODUCTION */
+
+#apropos .intro {
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+#apropos .kicker {
+    color: #35d6c3;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+#apropos h2 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+#apropos .muted {
+    color: #b9c9dc;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* DEUX COLONNES */
+
+#apropos .two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* CARTES */
+
+#apropos .card {
+    background: rgba(17, 43, 75, 0.88);
+    border: 1px solid rgba(94, 173, 194, 0.22);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#apropos .card:hover {
+    transform: translateY(-5px);
+    border-color: #35d6c3;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+#apropos h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 750;
+    margin: 0 0 18px;
+    line-height: 1.4;
+}
+
+#apropos .card p {
+    margin: 0 0 16px;
+}
+
+/* COMPÉTENCES */
+
+#apropos .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#apropos .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 13px;
+    border-radius: 30px;
+    background: rgba(53, 214, 195, 0.10);
+    border: 1px solid rgba(53, 214, 195, 0.35);
+    color: #bff8ef;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+#apropos .tag:hover {
+    background: #35d6c3;
+    color: #07172e;
+    border-color: #35d6c3;
+    transform: translateY(-2px);
+}
+
+/* SIGNATURE PROFESSIONNELLE */
+
+#apropos .wrap > .card {
+    margin-top: 25px !important;
+    padding: 35px;
+    background: linear-gradient(120deg, #102f50, #123d59);
+    border-left: 4px solid #35d6c3;
+}
+
+#apropos .wrap > .card h3 {
+    font-size: 23px;
+    letter-spacing: 0.3px;
+    margin-bottom: 15px;
+}
+
+#apropos .wrap > .card .kicker {
+    margin-bottom: 12px;
+}
+
+/* BOUTONS */
+
+#apropos .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 25px;
+}
+
+#apropos .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 22px;
+    min-height: 46px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 750;
+    transition: all 0.25s ease;
+}
+
+#apropos .btn.primary {
+    background: #35d6c3;
+    color: #07172e;
+    border: 1px solid #35d6c3;
+}
+
+#apropos .btn.primary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+#apropos .btn.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #6d91b1;
+}
+
+#apropos .btn.secondary:hover {
+    background: #ffffff;
+    color: #07172e;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ACCESSIBILITÉ */
+
+#apropos a:focus-visible,
+#apropos .tag:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* TABLETTES */
+
+@media (max-width: 850px) {
+    #apropos {
+        padding: 70px 18px;
+    }
+
+    #apropos .two {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TÉLÉPHONES */
+
+@media (max-width: 600px) {
+    #apropos {
+        padding: 55px 15px;
+    }
+
+    #apropos .intro {
+        margin-bottom: 25px;
+    }
+
+    #apropos h2 {
+        font-size: 29px;
+    }
+
+    #apropos .card {
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    #apropos h3 {
+        font-size: 19px;
+    }
+
+    #apropos .muted {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    #apropos .tag {
+        font-size: 12px;
+        padding: 8px 11px;
+    }
+
+    #apropos .wrap > .card h3 {
+        font-size: 19px;
+    }
+
+    #apropos .actions {
+        flex-direction: column;
+    }
+
+    #apropos .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* RÉDUCTION DES ANIMATIONS */
+
+@media (prefers-reduced-motion: reduce) {
+    #apropos *,
+    #apropos *::before,
+    #apropos *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+  
+/* ===== SECTION CONTACT ===== */
+#contact {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #081225, #102440);
+    color: #f5f7fb;
+}
+
+#contact .heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contact .heading h2 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 800;
+    color: #54e0c1;
+    margin-bottom: 12px;
+}
+
+#contact .intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #b4c1d4;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Carte de contact */
+#contact .card.contact {
+    max-width: 700px;
+    margin: 25px auto 0;
+    padding: 35px;
+    background: #111f37;
+    border: 1px solid #ffffff20;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .card.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(84, 224, 193, 0.10);
+}
+
+/* Informations personnelles */
+#contact .card.contact p {
+    padding: 12px 0;
+    margin: 0;
+    color: #dce7f6;
+    border-bottom: 1px solid #ffffff12;
+    line-height: 1.6;
+}
+
+#contact .card.contact p:last-of-type {
+    border-bottom: none;
+}
+
+#contact .card.contact strong {
+    color: #54e0c1;
+    font-weight: 750;
+}
+
+/* Liens */
+#contact .card.contact p a {
+    color: #80aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    overflow-wrap: anywhere;
+}
+
+#contact .card.contact p a:hover {
+    color: #54e0c1;
+    text-decoration: underline;
+}
+
+/* Boutons */
+#contact .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 28px;
+}
+
+#contact .actions .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background: #54e0c1;
+    color: #081225;
+    text-decoration: none;
+    font-weight: 800;
+    border: 1px solid #54e0c1;
+    transition: all 0.3s ease;
+}
+
+#contact .actions .btn:hover {
+    background: #80aaff;
+    border-color: #80aaff;
+    transform: translateY(-3px);
+}
+
+/* Bouton WhatsApp */
+#contact .actions .btn.outline {
+    background: transparent;
+    color: #54e0c1;
+    border: 1px solid #54e0c1;
+}
+
+#contact .actions .btn.outline:hover {
+    background: #54e0c1;
+    color: #081225;
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    #contact {
+        padding: 55px 16px;
+    }
+
+    #contact .card.contact {
+        padding: 23px 18px;
+    }
+
+    #contact .card.contact p {
+        font-size: 0.93rem;
+    }
+
+    #contact .actions {
+        flex-direction: column;
+    }
+
+    #contact .actions .btn {
+        width: 100%;
+    }
+}
+
+/* Accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    #contact *,
+    #contact *::before,
+    #contact *::after {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+  
+@media(max-width:780px){.grid,.two,.projects{grid-template-columns:1fr}.hero{padding-top:55px}.steps{grid-template-columns:1fr}.menu{display:block}nav{display:none;position:absolute;top:74px;left:0;right:0;background:#081225;padding:15px 20px;border-bottom:1px solid var(--line)}nav.open{display:block}nav ul{flex-direction:column;gap:12px}.contact{align-items:flex-start;flex-direction:column}.monogram{font-size:5rem}.profile-photo{max-height:340px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+</style></head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header><div class="wrap nav"><a class="brand" href="#accueil"><span class="mark">KD</span><span>KHADIM DIAW<small>WEB & SOLUTIONS NUMÉRIQUES</small></span></a><button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mainNav">☰</button><nav id="mainNav"><ul><li><a href="#apropos">À propos</a></li><li><a href="#competences">Compétences</a></li><li><a href="#projets">Projets</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+<main id="contenu">
+<section class="hero" id="accueil"><div class="wrap grid"><div><div class="eyebrow">Portfolio • Sénégal</div><h1>Je conçois des expériences <span>web utiles.</span></h1><p class="lead">Je suis Khadim Diaw, concepteur de sites web et passionné par les technologies numériques. Je crée des sites modernes, adaptés aux mobiles et orientés vers les besoins des entreprises et des institutions.</p><div class="actions"><a class="btn primary" href="#projets">Découvrir mes projets ↗</a><a class="btn secondary" href="#contact">Me contacter</a></div></div><aside class="profile"><div class="orb"><img class="profile-photo" src="https://res.cloudinary.com/dv4harxzo/image/upload/v1793182817/FB_IMG_1793181334714_ixwyyo.jpg" alt="Khadim Diaw, concepteur web" loading="lazy"></div><div class="caption"><p><strong>Khadim Diaw</strong><br><span class="muted">Concepteur web • Sénégal</span></p><span style="color:var(--mint)">● Portfolio</span></div></aside></div></section>
+<section id="apropos"><div class="wrap"><div class="intro"><div class="kicker">À propos</div><h2>Le numérique au service des besoins concrets.</h2><p class="muted">Mon approche associe conception, structure claire et simplicité d’utilisation. À travers mes projets, je cherche à aider les organisations à présenter leurs services, faciliter les prises de contact et renforcer leur présence en ligne.</p></div><div class="two"><article class="card"><h3>Mon profil</h3><p class="muted">Passionné par l’informatique et les nouvelles technologies, je conçois et développe des sites web modernes, professionnels et adaptés aux besoins des entreprises. Mon objectif est de créer des expériences numériques claires, accessibles sur téléphone comme sur ordinateur, qui valorisent l’activité de mes clients et facilitent le contact avec leur public.</p><p class="muted"><strong>Mon positionnement :</strong> conception web, développement front-end, design responsive et solutions numériques. Je m’appuie sur mes réalisations concrètes et je continue à renforcer mes compétences techniques.</p></article><article class="card" id="competences"><h3>Compétences & outils</h3><p class="muted">Technologies et compétences mobilisées:</p><div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Responsive design</span><span class="tag">GitHub</span><span class="tag">GitHub Pages</span><span class="tag">Conception d’interfaces</span><span class="tag">Structure de contenu</span><span class="tag">Solutions numériques</span><span class="tag">PHP natif</span><span class="tag">MySQL</span></div></article></div></div><div class="card" style="margin-top:20px"><div class="kicker">Ma signature professionnelle</div><h3>KHADIM DIAW — CONCEPTION WEB & SOLUTIONS NUMÉRIQUES</h3><p class="muted">Je transforme les besoins d’une activité en une présence web structurée : présentation des services, mise en valeur des réalisations, navigation adaptée aux mobiles et accès simple aux coordonnées. Les sites SSGN et DIAW MENUISIER BOIS illustrent cette démarche sur deux activités différentes.</p><div class="actions"><a class="btn primary" href="mailto:diawkhadimdiaw@gmail.com?subject=Collaboration%20web">Collaborer avec moi ↗</a><a class="btn secondary" href="tel:+221784604408">+221 78 460 44 08</a></div></div></div></section>
+<section id="projets"><div class="wrap"><div class="intro"><div class="kicker">Projets sélectionnés</div><h2>Des sites conçus pour présenter et connecter.</h2><p class="muted">Deux réalisations web à présenter dans mon portfolio. Mon rôle est la conception du site ; les activités des entreprises restent sous la responsabilité de leurs équipes.</p></div><div class="projects">
+<article class="card project"><div class="project-head gold"><span class="logo">S.S.G.N</span><h3>Site web SSGN</h3><span>Présentation • Services • Recrutement • Contact</span></div><div class="project-body"><p>Site conçu pour <strong>SANOU SERVICES GARDIENNAGE ET NETTOYAGE (SSGN)</strong>, avec des rubriques destinées à présenter l’entreprise, ses services et les informations utiles aux visiteurs et candidats.</p><div class="tags"><span class="tag">Responsive</span><span class="tag">Contact</span><span class="tag">GitHub Pages</span></div><div class="project-links"><a class="btn primary" href="https://khadimdiaw.github.io/SANOU-SERVICES/" target="_blank" rel="noopener noreferrer">Voir le site ↗</a><a class="btn secondary" href="#contact">Parler du projet</a></div></div></article>
+<article class="card project"><div class="project-head"><span class="logo">DMB</span><h3>DIAW MENUISIER BOIS</h3><span>Site vitrine • Galerie • Présentation des services</span></div><div class="project-body"><p>Site  conçu pour mettre en valeur une activité de menuiserie bois, présenter des réalisations à travers une galerie et faciliter la prise de contact avec les clients.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Galerie photo</span><span class="tag">Contact direct</span></div><div class="project-links"><a class="btn primary" href="https://khadimdiaw.github.io/DIAW-MENUISIER/" target="_blank" rel="noopener noreferrer" aria-label="Visiter le site DIAW MENUISIER BOIS dans un nouvel onglet">Visiter le site DMB ↗</a><a class="btn secondary" href="#contact">Parler du projet</a></div></div></article></div><p class="muted">Consultez directement chaque réalisation grâce aux boutons « Voir le site ». Les sites s’ouvrent dans un nouvel onglet pour conserver ce portfolio ouvert.</p></div></section>
+<section id="demarche"><div class="wrap"><div class="intro"><div class="kicker">Ma démarche</div><h2>De l’idée à un site clair et accessible.</h2><p class="muted">Une méthode simple pour garder le projet centré sur les besoins de l’utilisateur.</p></div><div class="steps"><div class="step"><strong>01 — Comprendre</strong><span class="muted">Identifier les objectifs, le public et les informations prioritaires.</span></div><div class="step"><strong>02 — Concevoir</strong><span class="muted">Organiser les rubriques et adapter l’interface aux mobiles et ordinateurs.</span></div><div class="step"><strong>03 — Publier & améliorer</strong><span class="muted">Tester les liens, publier le site et l’améliorer à partir des retours.</span></div></div></div></section>
+
+<section id="contact">
+<div class="heading"><h2>Me contacter</h2></div>
+<p class="intro">Vous avez un projet, une collaboration ou une opportunité professionnelle ? Je serai ravi d'échanger avec vous.</p>
+<div class="card contact" style="margin-top:25px">
+<p><strong>Nom :</strong> Khadim DIAW</p>
+<p><strong>Localisation :</strong> Dakar, Sénégal</p>
+<p><strong>Téléphone :</strong> <a href="tel:+221784604408">+221 78 460 44 08</a></p>
+<p><strong>Email :</strong> <a href="mailto:diawkhadimdiaw@gmail.com">diawkhadimdiaw@gmail.com</a></p>
+
+<div class="actions">
+<a class="btn" href="mailto:diawkhadimdiaw@gmail.com">Envoyer un email</a>
+<a class="btn outline" href="https://wa.me/221784604408" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="#accueil" class="footer-logo">KD<span>.</span></a>
+            <p>Conception web · Développement numérique</p>
+        </div>
+
+        <div class="footer-socials">
+             <a href="mailto:diawkhadimdiaw@gmail.com">Email</a>
+            <a href="https://wa.me/221784604408" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>©2026 <span id="current-year"></span> KHADIM DIAW. Tous droits réservés.</p>
+            <a href="#accueil">Retour en haut ↑</a>
+        </div>
+    </div>
+</footer>
+
+  
+<script>
+const btn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+btn.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'✕':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
